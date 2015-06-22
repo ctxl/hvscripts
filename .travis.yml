@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "0.10"
+notifications:
+  email: false
+install:
+  - npm install -g jshint jscs
+script:
+  - jscs -p "airbnb" .
+  - jscs -p "google" .
+  - jscs -p "grunt" .
+  - jshint .

@@ -1,0 +1,9 @@
+{
+  "browser": true,
+  "devel": true,
+  "node": false,
+  "curly": true,
+  "eqeqeq": true,
+  "undef": true,
+  "strict": true
+}
