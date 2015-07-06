@@ -2,9 +2,12 @@
 
 for the clicky game
 
-| script name | description                          | filename       |
-| :---------- | :----------------------------------- | :------------- |
-| HV - Sort   | custom sorting in the equipment shop | hvsort.user.js |
+| script name         | description                          | filename               |
+| :------------------ | :----------------------------------- | :--------------------- |
+| HV - Sort           | custom sorting in the equipment shop | hvsort.user.js         |
+| HV - Track Drops    | tracks drops; requires Display Drops | hvtrackdrops.user.js   |
+| HV - Display Drops  | companion userscript for Track Drops | hvdisplaydrops.user.js |
+| HV - Display Drops+ | -                                    | -                      |
 
 # why?
 
