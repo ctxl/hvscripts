@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           HV - Track Drops
 // @description    requires a Display Drops companion userscript
-// @version        0.82.1
+// @version        0.82.2
 // @match          http://hentaiverse.org/*
 // @match          http://alt.hentaiverse.org/*
 // @grant          none
@@ -120,6 +120,14 @@
 
         _results.forEach(function(_text) {
           var _result = {t: _text};
+
+          if (_origin === 'Monster Lab') {
+            var _monster = document
+              .querySelector('.ms.msa > div + div > div.fd4 > div').textContent;
+
+            _result.m = _monster;
+          }
+
           _drop.r.push(_result);
         });
 

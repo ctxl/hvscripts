@@ -139,7 +139,7 @@
       hv.ui.trackdrops.drops.appendChild(_nodrops);
       hv.ui.stuffbox.appendChild(hv.ui.trackdrops.drops);
 
-      setTimeout(function() {
+      window.setTimeout(function() {
         hv.ui.trackdrops.drops.removeChild(_nodrops);
         hv.ui.stuffbox.removeChild(hv.ui.trackdrops.drops);
         hv.ui.visibility.show(hv.ui.components);
