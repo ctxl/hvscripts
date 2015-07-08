@@ -148,11 +148,11 @@
         next: document.getElementById('ckey_continue')
       };
 
-      // div.btcp is the challenge-end message box for REs
-      hv.battle.end = document.querySelector('#battleform + div.btt > div.btcp');
+      // div.btcp is the challenge-end message box for encounters/fleeing
+      hv.battle.encounter = document.querySelector('#battleform + div.btt > div.btcp');
 
       // not a battle page with drops, exit
-      if (!hv.battle.end &&
+      if (!hv.battle.encounter &&
           !hv.battle.button.next) { return; }
 
       // challenge cleared
