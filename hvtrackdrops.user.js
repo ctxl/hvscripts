@@ -144,14 +144,20 @@
     if (hv.battle.log) {
 
       hv.battle.button = {
+        // div if end of challenge, img if more rounds
         next: document.getElementById('ckey_continue')
       };
 
+      // div.btcp is the challenge-end message box for REs
+      hv.battle.end = document.querySelector('#battleform + div.btt > div.btcp');
+
       // not a battle page with drops, exit
-      if (!hv.battle.button.next) { return; }
+      if (!hv.battle.end &&
+          !hv.battle.button.next) { return; }
 
       // challenge cleared
-      if (hv.battle.button.next.tagName === 'DIV') { hv.battle.end = true; }
+      if (hv.battle.button.next &&
+          hv.battle.button.next.tagName === 'DIV') { hv.battle.end = true; }
 
       // check if loaded from cache, chrome/backup method
       hv.battle.form = {
